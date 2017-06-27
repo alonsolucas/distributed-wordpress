@@ -1,0 +1,12 @@
+- hosts: frontend
+
+  roles:
+    - server
+    - php
+    - wordpress
+
+- hosts: backend
+
+  roles:
+    - server
+    - mysql

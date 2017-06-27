@@ -1,0 +1,8 @@
+---
+- name: Install PHP extensions
+  apt: name={{ item }} state=present
+  sudo: yes
+  with_items:
+    - php-gd
+    - python-mysqldb
+# tasks file for php
